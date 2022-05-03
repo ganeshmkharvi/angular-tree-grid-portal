@@ -1,0 +1,31 @@
+<div>
+<ejs-treegrid #treegrid [dataSource]='data' [enableVirtualization]='columnCount === 0 ? true : false' height=291 childMapping='Crew' 
+[treeColumnIndex]='1' [toolbar]="toolbar" [showColumnChooser]=true [enableInfiniteScrolling]='columnCount === 0 ? false : true'
+ [frozenColumns]= 'columnCount' 
+[allowFiltering]='filterCol' [filterSettings]='filterSettings' [allowSorting]= 'multiSort'  [sortSettings]='sortSettings' 
+(actionComplete)="sort($event)"  [allowSelection]=true [contextMenuItems]='contextMenuItems' (contextMenuOpen)="contextMenuOpen($event)"
+ (contextMenuClick)="contextMenuClick($event)" [allowSelection]=true [selectionSettings]='selectionSettings'
+ (rowSelected)='rowSelected($event)'
+>
+    <e-columns>
+        <e-column field='TaskID' headerText='Player Jersey' width='120' textAlign='Right' ></e-column>
+        <e-column field='FIELD1' headerText='Player Name' width='120'></e-column>
+        <e-column field='FIELD2' headerText='Year' width='100' textAlign='Right'></e-column>
+        <e-column field='FIELD3' headerText='Stint' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD4' headerText='TMID4' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD5' headerText='Player Jersey5' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD6' headerText='Player Name6' width='120'></e-column>
+        <e-column field='FIELD7' headerText='Year7' width='100' textAlign='Right'></e-column>
+        <e-column field='FIELD8' headerText='Stint8' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD9' headerText='TMID9' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD10' headerText='Player Name10' width='120'></e-column> 
+        <e-column field='FIELD12' headerText='Stint12' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD13' headerText='TMID13' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD14' headerText='Player Jersey14' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD15' headerText='Player Name15' width='120'></e-column>
+        <e-column field='FIELD16' headerText='Yea18' width='100' textAlign='Right'></e-column>
+        <e-column field='FIELD17' headerText='Stint19' width='120' textAlign='Right'></e-column>
+        <e-column field='FIELD18' headerText='TMID20' width='120' textAlign='Right'></e-column><!-- -->
+    </e-columns>
+</ejs-treegrid>
+</div>
