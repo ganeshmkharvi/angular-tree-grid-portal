@@ -39,6 +39,12 @@ Context Menu 2 - Rright-click (mouse) or long-press (mobile) a "Row", to pop-up 
  
 MultiSelect ☑: Enable user to "Multi-select" rows on PC and Mobile, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/selection 
 
+### API Source
+- Api git url: https://github.com/ganeshmkharvi/node-express-tree-grid-api-server
+- GET tree data api url- http://localhost:3001/api/tree
+- DEL tree task (parent row) api url- http://localhost:3001/api/tree/{taskId} Here  taskId is the parentRowId e.g. 1
+- DEL tree sub task (child row) api url- http://localhost:3001/api/tree/{taskId}/subtask/{subtaskId} Here  taskId is the parentRowId e.g. 1, subTaskId can be 5.
+- Replace 3001 with the appropriate port number you have used in your project.
 
 ### Built With
 
